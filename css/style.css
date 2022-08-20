@@ -5,18 +5,13 @@ body {
 /*--- IconPack ---*/
 ion-icon {
   font-size: 25px;
+  margin-top: 5px;
 }
 
 /*--- Navbar ---*/
 .navbar {
-  background: rgb(31, 3, 63);;
-}
-
-/*--- Centrar Botones Toggled Navbar ---*/
-@media screen and (max-width: 300px) {
-  .nav-item {
-  width: max-content;
- }
+  background: rgb(31, 3, 63);
+  padding: 0px;
 }
 
 /*--- Argentina Programa ---*/
@@ -28,6 +23,29 @@ nav.navbar .navbar-brand .logo img {
 nav.navbar .navbar-brand span {
   font: 1.5em sans-serif;
   color: rgb(255, 255, 255);
+}
+
+/*--- Show Button's hidden text ---*/
+@media screen and (min-width: 400px) {
+.txtreset {
+  display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .txtreset {
+    display: inline-block;
+    font-size: 25px;
+    }
+  }
+
+/*--- Center Buttons Toggled Navbar on small screens---*/
+@media screen and (min-width: 300px) {
+  .nav-item {
+    display: block;
+    max-width: 100%;
+    text-align: center;
+ }
 }
 
 /* Full-width input fields */
@@ -68,7 +86,7 @@ button:hover {
 
 .close:hover,
 .close:focus {
-  color: rgb#f44336;
+  color:#f44336;
   cursor: pointer;
 }
 
@@ -107,7 +125,7 @@ b {
   background-color: #000000;
   margin: 10% auto 15% auto; /* 10% from the top, 15% from the bottom and centered */
   border: 1px solid rgb(255, 255, 255);
-  width: 35%; /* Could be more or less, depending on screen size */
+  width: 50%; /* Could be more or less, depending on screen size */
 }
 
 /* Add Zoom Animation */
@@ -126,10 +144,12 @@ b {
   to {transform: scale(1)}
 }
 
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn {
-     width: 100%;
+/*--- Change styles for Close button (x) on extra small screens ---*/
+@media screen and (min-width: 300px) {
+  .close {
+    position: absolute;
+    right: 5px;
+    top: -7px;
   }
 }
 

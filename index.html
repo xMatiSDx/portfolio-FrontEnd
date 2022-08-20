@@ -15,14 +15,14 @@
   <nav class="navbar navbar-expand-lg flex-wrap flex-lg-nowrap">
     <div class="container-fluid">
       <!--- Left Elements -->
-      <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/">
-        <span class="logo d-none d-sm-inline">
+      <a class="navbar-brand d-sm-inline" href="https://argentinaprograma.inti.gob.ar/">
+        <span class="logo d-sm-inline">
           <img src="https://argentinaprograma.inti.gob.ar/pluginfile.php/1/theme_moove/logo/1659143423/APLogo-20-20.png" alt="Argentina Programa Logo">
         </span>
         <span id="agp" class="d-none d-sm-inline">#YoProgramo</span>        
       </a>
       <!--- Collapsible Wrapper --->
-      <button class="navbar-toggler first-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler first-button ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <!--- humburguer button -->
         <div class="navbar-toggler animated-icon1 mb-2 mb-lg-0">
           <span></span>
@@ -33,19 +33,20 @@
       <!--- Right elements -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="btn btn-dark me-2 mb-2" href="https://github.com/xMatiSDx" role="button"><ion-icon name="logo-github"></ion-icon><i class="fab fa-facebook"></i></a>
+          <li class="nav-item d-sm-inline">
+            <a class="btn btn-dark me-2 mb-2" href="https://github.com/xMatiSDx" role="button"><ion-icon name="logo-github"></ion-icon><span class="txtreset ms-2"><b>GitHub</b></span>
+            <i class="fab fa-facebook"></i></a>
           </li>
-          <li class="nav-item">
-            <a class="btn btn-dark me-2 mb-2" href="https://twitter.com/matiarias_" role="button"><ion-icon name="logo-twitter"></ion-icon>
+          <li class="nav-item d-sm-inline">
+            <a class="btn btn-dark me-2 mb-2" href="https://twitter.com/matiarias_" role="button"><ion-icon name="logo-twitter"></ion-icon><span class="txtreset ms-2"><b>Twitter</b></span>
+              <i class="fab fa-github"></i></a>
+          </li>
+          <li class="nav-item d-sm-inline">
+            <a class="btn btn-dark me-2 mb-2" href="https://www.instagram.com/matiasezequielarias_/" role="button"><ion-icon name="logo-instagram"></ion-icon><span class="txtreset ms-2"><b>Instagram</b></span>
               <i class="fab fa-github"></i></a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-dark me-2 mb-2" href="https://www.instagram.com/matiasezequielarias_/" role="button"><ion-icon name="logo-instagram"></ion-icon>
-              <i class="fab fa-github"></i></a>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-light" onclick="document.getElementById('id01').style.display='block'"><ion-icon name="log-in-outline"></ion-icon>
+            <button type="button" class="btn btn-light me-2 mb-2" onclick="document.getElementById('id01').style.display='block'"><ion-icon name="log-in-outline"></ion-icon><span class="txtreset ms-2"><b>Login</b></span>
             </button>
           </li>
         </ul>
@@ -63,7 +64,7 @@
   <!--- Modal login form --->
   <div id="id01" class="modal">
     <form class="modal-content animate" action="/action_page.php" method="post">
-      <div class="imgcontainer">
+      <div>
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       </div>
       <div class="container">
