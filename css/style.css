@@ -1,16 +1,17 @@
 body {
-  background-color: black;
+  background-color: #0e1018;
 }
 
 /*--- IconPack ---*/
 ion-icon {
+  color: #ffffff;
   font-size: 25px;
   margin-top: 5px;
 }
 
 /*--- Navbar ---*/
 .navbar {
-  background: rgb(31, 3, 63);
+  background: rgb(0, 0, 0);
   padding: 0px;
 }
 
@@ -20,9 +21,76 @@ nav.navbar .navbar-brand .logo img {
 }
 
 /*--- #YoProgramo---*/
-nav.navbar .navbar-brand span {
-  font: 1.5em sans-serif;
+nav.navbar .navbar-brand span#agp {
+  font: 25px sans-serif;
   color: rgb(255, 255, 255);
+  padding-top: 5px;
+}
+
+
+
+/*--- Matias ---*/
+nav.navbar .navbar-brand .BrandName {
+  width: 100%;
+  font: 45px sans-serif;
+}
+
+/*--- | ---*/
+#divisor {
+  color: #1639D6;
+}
+
+
+/*--- Buttons colors ---*/
+.btn:hover {
+  color: #1639D6;
+  background: #1639D6;
+}
+.btn:active {
+  color:#0e1018 ;
+  background: #0e1018;
+}
+
+/*--- Full Stack Developer span ---*/
+nav.navbar .navbar-brand .FSD {
+  font-size: 12px;
+  text-align: left center;
+  margin-top: 8px;
+}
+
+/*--- Full Stack Developer ul ---*/
+#ULfsd {
+  padding-left: 5px;
+  margin: 0px 0px 0px 0px;
+}
+
+/*--- Full Stack Developer li---*/
+nav.navbar .navbar-brand .FSD ul li {
+  height: 12px;
+}
+
+@media screen and (max-width: 400px) {
+  nav.navbar .navbar-brand {
+    display: block;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  nav.navbar .navbar-brand .BrandName {
+    font: 20px sans-serif;
+  }
+  nav.navbar .navbar-brand .FSD {
+    margin-top: 0px;
+    font-size: 5px;
+    text-align: left center;
+  }
+  #ULfsd {
+    padding-left: 0px;
+    margin-top: 0px;
+  }
+  nav.navbar .navbar-brand .FSD ul li {
+    height: 6px;
+  }
 }
 
 /*--- Show Button's hidden text ---*/
@@ -54,7 +122,7 @@ input[type=text], input[type=password] {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid rgb(31, 3, 63);
+  border: 1px solid #1639D6;
   box-sizing: border-box;
 }
 
@@ -66,8 +134,8 @@ input[type=text], input[type=password] {
   margin-right: auto;
   cursor: pointer;
   width: 100%;
-  background-color: rgb(31, 3, 63);
-  border: rgb(31, 3, 63);
+  background-color: #1639D6;
+  border: #1639D6;
 }
 
 button:hover {
