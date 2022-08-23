@@ -2,6 +2,10 @@ body {
   background-color: #0e1018;
 }
 
+/*-----------------------*/
+/*------- NAVBAR --------*/
+/*----------------------*/
+
 /*--- IconPack ---*/
 ion-icon {
   color: #ffffff;
@@ -30,7 +34,7 @@ nav.navbar .navbar-brand span#agp {
 
 
 /*--- Matias ---*/
-nav.navbar .navbar-brand .BrandName {
+nav.navbar .navbar-brand1 .BrandName {
   width: 100%;
   font: 45px sans-serif;
 }
@@ -52,7 +56,7 @@ nav.navbar .navbar-brand .BrandName {
 }
 
 /*--- Full Stack Developer span ---*/
-nav.navbar .navbar-brand .FSD {
+nav.navbar .navbar-brand1 .FSD {
   font-size: 12px;
   text-align: left center;
   margin-top: 8px;
@@ -65,21 +69,21 @@ nav.navbar .navbar-brand .FSD {
 }
 
 /*--- Full Stack Developer li---*/
-nav.navbar .navbar-brand .FSD ul li {
+nav.navbar .navbar-brand1 .FSD ul li {
   height: 12px;
 }
 
 @media screen and (max-width: 400px) {
-  nav.navbar .navbar-brand {
+  nav.navbar .navbar-brand1 {
     display: block;
     margin-top: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
   }
-  nav.navbar .navbar-brand .BrandName {
+  nav.navbar .navbar-brand1 .BrandName {
     font: 20px sans-serif;
   }
-  nav.navbar .navbar-brand .FSD {
+  nav.navbar .navbar-brand1 .FSD {
     margin-top: 0px;
     font-size: 5px;
     text-align: left center;
@@ -88,7 +92,7 @@ nav.navbar .navbar-brand .FSD ul li {
     padding-left: 0px;
     margin-top: 0px;
   }
-  nav.navbar .navbar-brand .FSD ul li {
+  nav.navbar .navbar-brand1 .FSD ul li {
     height: 6px;
   }
 }
@@ -115,6 +119,11 @@ nav.navbar .navbar-brand .FSD ul li {
     text-align: center;
  }
 }
+
+
+/*-----------------------*/
+/*----- LOGIN FORM -----*/
+/*----------------------*/
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
@@ -221,6 +230,10 @@ b {
   }
 }
 
+/*-----------------------*/
+/*-- HAMBURGUER BUTTON --*/
+/*----------------------*/
+
 /*--- Hamburguer button "Icon 1"---*/
 .animated-icon1 {
 width: 30px;
@@ -291,4 +304,183 @@ top: 11px;
 -moz-transform: rotate(-135deg);
 -o-transform: rotate(-135deg);
 transform: rotate(-135deg);
+}
+
+
+/*-----------------------*/
+/*-- AUTO TYPING TEXT --*/
+/*----------------------*/
+.wrapper {
+  margin-top: 10%;
+  width: auto;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.main2 {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.main .text {
+  color: #ffffff;
+  font-size: 60px;
+
+}
+
+.main2 .text1 {
+  color: #ffffff;
+  font-size: 60px;
+}
+
+.main2 .option {
+  margin-left: 0px;
+  margin-bottom: 0px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+
+.option li {
+  list-style: none;
+  font-size: 60px;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(2) infinite;
+}
+
+.option li span b {
+  color: #1639D6;
+}
+
+@keyframes slide 
+{
+  100% {
+    top: -180px;
+  }
+}
+
+.option li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+
+.option li span:after 
+{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #0e1018;
+  border-left: 5px solid #1639D6;
+  animation: typing 6s steps(20) infinite;
+}
+
+@keyframes typing 
+{
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+#Description span b{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+@media screen and (max-width: 450px) {
+
+  .wrapper {
+    margin-top: 10%;
+    width: auto;
+  }  
+
+  .col-8 {
+    width: 100%;
+  }
+
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 10px;
+  }
+  
+  .main2 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 10px;
+  }
+
+
+  .main .text {
+    font-size: 27px;
+  }
+  .main2 .text1 {
+    font-size: 27px;
+  }
+
+  .main2 .option {
+    
+    padding-left: 10px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+  }
+
+  .option li {
+    margin-bottom: 1px;
+    list-style: none;
+    font-size: 27px;
+    position: relative;
+    height: 35px;
+    top: 0;
+    animation: slide 12s steps(2) infinite;
+  }
+  .option li span {
+    position: relative;
+    margin: px 0;
+    line-height: 30px;
+  }
+
+  .option li span:after 
+{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background: #0e1018;
+  border-left: 3px solid #1639D6;
+  animation: typing 6s steps(20) infinite;
+}
+
+@keyframes slide 
+{
+  100% {
+    top: -70px;
+  }
+}
+}
+
+@media screen and (max-width: 1050px) {
+  .col-4 {
+    display: none;
+  }
 }
