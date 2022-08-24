@@ -21,7 +21,7 @@ ion-icon {
 
 /*--- Argentina Programa ---*/
 nav.navbar .navbar-brand .logo img {
-  max-height: 70px;
+  max-height: 50px;
 }
 
 /*--- #YoProgramo---*/
@@ -310,15 +310,10 @@ transform: rotate(-135deg);
 /*-----------------------*/
 /*-- AUTO TYPING TEXT --*/
 /*----------------------*/
-.wrapper {
-  margin-top: 10%;
-  width: auto;
-}
 
-.wrapper {
-  display: block;
+.container-xl {
+  margin-top: 7%;
 }
-
 
 .main {
   display: flex;
@@ -344,8 +339,9 @@ transform: rotate(-135deg);
 }
 
 .main2 .option {
-  margin-left: 0px;
+  margin-left: 70px;
   margin-bottom: 0px;
+  margin-top: -89px;
   height: 90px;
   line-height: 90px;
   overflow: hidden;
@@ -387,7 +383,7 @@ transform: rotate(-135deg);
   height: 100%;
   background: #0e1018;
   border-left: 5px solid #1639D6;
-  animation: typing 6s steps(20) infinite;
+  animation: typing 6s steps(19) infinite;
 }
 
 @keyframes typing 
@@ -400,6 +396,10 @@ transform: rotate(-135deg);
   }
 }
 
+  .btrow {
+    text-align: center;
+  }
+
  .textbox {
   width: 720px;
   text-align: justify;
@@ -408,13 +408,15 @@ transform: rotate(-135deg);
 .buttonDW {
   background-color: #1639D6;
   cursor: pointer;
+  width: 50%;
+
 } .buttonDW b {
   color: #000000;
 }
 
 .buttonDW:hover {
   background-color: #000000;
-  border: 3px solid #1639D6
+  border: 3px solid #1639D6;
 } .buttonDW b:hover {
   color: #ffffff;
 }
@@ -422,296 +424,19 @@ transform: rotate(-135deg);
 .buttonCM {
   border: 3px solid #1639D6;
   cursor: pointer;
+  width: 50%;
 }
 
-/*-------------------------------------------------*/
-/*-- AUTO TYPING TEXT FOR LESS THAN 450PX DEVICES--*/
-/*-------------------------------------------------*/
-
-
-@media screen and (max-width: 450px) {
-
-  .col-4 {
-    display: none;
-  }  
-
-  .wrapper {
-    margin-top: 10%;
-    width: auto;
-  }  
-
-  .col-8 {
-    width: 100%;
-  }
-
-  .main {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    margin-left: 10px;
-  }
-  
-  .main2 {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    margin-left: 10px;
-  }
-
-
-  .main .text {
-    font-size: 27px;
-  }
-  .main2 .text1 {
-    font-size: 27px;
-  }
-
-  .main2 .option {
-    
-    padding-left: 10px;
-    margin-left: 0px;
-    margin-bottom: 0px;
-    height: 30px;
-    line-height: 30px;
-    overflow: hidden;
-  }
-
-  .option li {
-    margin-bottom: 1px;
-    list-style: none;
-    font-size: 27px;
-    position: relative;
-    height: 35px;
-    top: 0;
-    animation: slide 12s steps(2) infinite;
-  }
-  .option li span {
-    position: relative;
-    margin: px 0;
-    line-height: 30px;
-  }
-
-  .option li span:after 
-{
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 30px;
-  background: #0e1018;
-  border-left: 3px solid #1639D6;
-  animation: typing 6s steps(20) infinite;
+.col-lg-4 {
+  text-align: center;
+  align-items: center;
+  align-content: center;
 }
 
-@keyframes slide 
-{
-  100% {
-    top: -70px;
-  }
-}
-
-.textbox {
-  width: 400px;
-  margin-left: 10px;
-  text-align: justify;
-}
-}
-
-/*----------------------------------------------------*/
-/*-- AUTO TYPING TEXT FOR 1050PX UNTIL 540PX DEVICES--*/
-/*----------------------------------------------------*/
-
-@media screen and (max-width: 1050px) and (min-width:540px) {
-
-  .col-4 {
-    display: none;
-  }  
-
-    .wrapper {
-      margin-top: 10%;
-      width: auto;
-      margin-left: 15%;
-    }  
-
-    .wrapper2 {
-      margin-left: 15%;
-    }
-  
-    .col-8 {
-      width: 100%;
-    }
-  
-    .main {
-      display: flex;
-      align-items: center;
-      justify-content: left;
-      margin-left: 10px;
-    }
-    
-    .main2 {
-      display: flex;
-      align-items: center;
-      justify-content: left;
-      margin-left: 10px;
-    }
-  
-  
-    .main .text {
-      font-size: 40px;
-    }
-    .main2 .text1 {
-      font-size: 40px;
-    }
-  
-    .main2 .option {
-      
-      padding-left: 10px;
-      margin-left: 0px;
-      margin-bottom: 0px;
-      height: 40px;
-      line-height: 40px;
-      overflow: hidden;
-    }
-  
-    .option li {
-      margin-bottom: 1px;
-      list-style: none;
-      font-size: 40px;
-      position: relative;
-      height: 40px;
-      top: 0;
-      animation: slide 12s steps(2) infinite;
-    }
-    .option li span {
-      position: relative;
-      margin: px 0;
-      line-height: 40px;
-    }
-  
-    .option li span:after 
-  {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 45px;
-    background: #0e1018;
-    border-left: 3px solid #1639D6;
-    animation: typing 6s steps(20) infinite;
-  }
-  
-  @keyframes slide 
-  {
-    100% {
-      top: -90px;
-    }
-  }
-  
-  .textbox {
-    width: 500px;
-    margin-left: 10px;
-    text-align: justify;
-  }
-}
-
-/*----------------------------------------------------*/
-/*-- AUTO TYPING TEXT FOR 540PX UNTIL 450PX DEVICES--*/
-/*----------------------------------------------------*/
-
-
-@media screen and (max-width: 540px) and (min-width:450px) {
-
-  .col-4 {
-    display: none;
-  }  
-
-    .wrapper {
-      margin-top: 10%;
-      width: auto;
-      margin-left: 5%;
-    }  
-
-    .wrapper2 {
-      margin-left: 5%;
-    }
-  
-    .col-8 {
-      width: 100%;
-    }
-  
-    .main {
-      display: flex;
-      align-items: center;
-      justify-content: left;
-      margin-left: 10px;
-    }
-    
-    .main2 {
-      display: flex;
-      align-items: center;
-      justify-content: left;
-      margin-left: 10px;
-    }
-  
-  
-    .main .text {
-      font-size: 40px;
-    }
-    .main2 .text1 {
-      font-size: 40px;
-    }
-  
-    .main2 .option {
-      
-      padding-left: 10px;
-      margin-left: 0px;
-      margin-bottom: 0px;
-      height: 40px;
-      line-height: 40px;
-      overflow: hidden;
-    }
-  
-    .option li {
-      margin-bottom: 1px;
-      list-style: none;
-      font-size: 40px;
-      position: relative;
-      height: 40px;
-      top: 0;
-      animation: slide 12s steps(2) infinite;
-    }
-    .option li span {
-      position: relative;
-      margin: px 0;
-      line-height: 40px;
-    }
-  
-    .option li span:after 
-  {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 45px;
-    background: #0e1018;
-    border-left: 3px solid #1639D6;
-    animation: typing 6s steps(20) infinite;
-  }
-  
-  @keyframes slide 
-  {
-    100% {
-      top: -90px;
-    }
-  }
-  
-  .textbox {
-    width: 500px;
-    margin-left: 10px;
-    text-align: justify;
-  }
+img {
+  border-top-left-radius: 50% 50%; 
+  border-top-right-radius: 50% 50%; 
+  border-bottom-right-radius: 50% 50%; 
+  border-bottom-left-radius: 50% 50%;
 }
 
