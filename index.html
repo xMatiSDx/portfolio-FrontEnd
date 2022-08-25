@@ -12,6 +12,7 @@
 </head>
 <body>
   <!--- Navbar -->
+<header>  
   <nav class="navbar navbar-expand-lg flex-wrap flex-lg-nowrap">
     <div class="container-fluid">
       <!--- Left Elements -->
@@ -68,11 +69,15 @@
       </div>
     </div>
   </nav>
-  <!--- Main Content --->
-  <div class="container-xl">
+</header>
+  <!--- Main Content BANNER AND AUTO TYPE TEXT --->
+  <section class="banner">
+    <div class="container">
     <div class="row">
       <div class="col-lg-4">
-        <img src="-4zlw2y.jpg" class=" float-start img-fluid me-5">
+        <picture>
+          <img src="-4zlw2y.jpg" class="float-start img-fluid" id="photo">
+        </picture>
       </div>
       <div class="col-lg-8">
         <div class="row main">
@@ -108,7 +113,24 @@
         </div>
       </div>
     </div>
-  </div>       
+    </div>
+  </section>
+  <!--- Main Section About --->
+    <section class="about" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title">
+            <div class="h1">
+              <b>Who is this guy?</b>
+            </div>
+            <p>Hi... again... As you will have noticed, my name is Matias Ezequiel Arias and I'm a Full Stack Developer Jr from Argentina. And this is what i haven't told you yet: For the last seven years i have performed myself in different branches of the comercial sector. 
+              Now I'm looking to test myself in new challenges.</p>
+          </div>
+        </div>
+      </div>
+    </div>   
+  </section>    
   <!--- Modal login form --->
   <div id="id01" class="modal">
     <form class="modal-content animate" action="/action_page.php" method="post">
